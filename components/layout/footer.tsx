@@ -10,7 +10,7 @@ export function Footer() {
             MR
           </span>
           <span className="text-muted-foreground">
-            © {new Date().getFullYear()} {SITE.name}
+            © {new Date().getFullYear()} {SITE.brand}
           </span>
         </div>
 

@@ -34,8 +34,8 @@ const keywords = [
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — Data Engineer · Analytics Engineer · AI Engineer`,
-    template: `%s · ${SITE.name}`,
+    default: `${SITE.brand} — ${SITE.brandTagline}`,
+    template: `%s · ${SITE.brand}`,
   },
   description:
     "Mohammed Rayees — Data Engineer, Analytics Engineer and AI Engineer. Building scalable data platforms, cloud analytics and GenAI-powered applications with Databricks, PySpark, Azure and the modern LLM stack.",
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE.url,
-    title: `${SITE.name} — Data & AI Engineer`,
+    title: `${SITE.brand} — ${SITE.brandTagline}`,
     description:
       "Scalable data platforms, cloud analytics and GenAI applications. Databricks · PySpark · Azure · LangChain.",
-    siteName: SITE.name,
+    siteName: SITE.brand,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Data & AI Engineer`,
+    title: `${SITE.brand} — ${SITE.brandTagline}`,
     description:
       "Scalable data platforms, cloud analytics and GenAI applications.",
   },
@@ -71,16 +71,26 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: SITE.name,
-  url: SITE.url,
-  email: SITE.email,
-  jobTitle: "Data Engineer / Analytics Engineer / AI Engineer",
-  sameAs: [SITE.social.github, SITE.social.linkedin],
-  knowsAbout: keywords,
-};
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: SITE.brand,
+    alternateName: SITE.name,
+    url: SITE.url,
+    email: SITE.email,
+    jobTitle: "Data Engineer / Analytics Engineer / AI Engineer",
+    sameAs: [SITE.social.github, SITE.social.linkedin],
+    knowsAbout: keywords,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE.brand,
+    url: SITE.url,
+    description: SITE.brandTagline,
+  },
+];
 
 export default function RootLayout({
   children,

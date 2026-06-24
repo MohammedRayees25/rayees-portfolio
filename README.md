@@ -1,6 +1,6 @@
-# Mohammed Rayees — Portfolio
+# Mohammed Rayees Portfolio
 
-A world-class personal portfolio for **Mohammed Rayees** — Data Engineer · Analytics Engineer · AI Engineer.
+A world-class personal portfolio for **Mohammed Rayees** — Data Engineer | Analytics Engineer | AI Engineer.
 
 Built with a modern engineering aesthetic inspired by Stripe, Vercel, Databricks and Linear.
 

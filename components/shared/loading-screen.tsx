@@ -42,8 +42,8 @@ export function LoadingScreen() {
                 transition={{ duration: 1.2, ease: "easeInOut" }}
               />
             </div>
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              {SITE.shortName}.dev
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              {SITE.brand}
             </p>
           </div>
         </motion.div>

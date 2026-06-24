@@ -35,7 +35,7 @@ export function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-sky-500 to-violet-500 text-white">
             MR
           </span>
-          <span className="hidden sm:inline">{SITE.shortName}</span>
+          <span className="hidden whitespace-nowrap sm:inline">{SITE.brand}</span>
         </a>
 
         <div className="hidden items-center gap-1 md:flex">

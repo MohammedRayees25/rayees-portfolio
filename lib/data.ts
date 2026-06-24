@@ -6,6 +6,8 @@
 export const SITE = {
   name: "Mohammed Rayees",
   shortName: "Rayees",
+  brand: "Mohammed Rayees Portfolio",
+  brandTagline: "Data Engineer | Analytics Engineer | AI Engineer",
   roles: [
     "Data Engineer",
     "Analytics Engineer",
