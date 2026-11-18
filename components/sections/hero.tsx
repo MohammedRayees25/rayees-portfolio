@@ -62,7 +62,7 @@ export function Hero() {
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-medium text-sky-300 backdrop-blur-md"
         >
           <Sparkles className="h-3.5 w-3.5" />
-          Available for Data &amp; AI Engineering roles
+          Available for Data Engineering roles
         </motion.div>
 
         <motion.h1
@@ -90,7 +90,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg"
         >
-          {SITE.tagline} Strong focus on SQL, Data Engineering, Cloud and GenAI.
+          {SITE.tagline} Strong focus on Azure, SQL, ETL and Analytics.
         </motion.p>
 
         <motion.div

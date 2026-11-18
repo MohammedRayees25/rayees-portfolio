@@ -11,7 +11,7 @@ const focusIcons: Record<string, typeof Database> = {
   SQL: Database,
   "Data Engineering": Briefcase,
   Cloud: Cloud,
-  GenAI: Sparkles,
+  Analytics: Sparkles,
 };
 
 export function About() {
@@ -20,8 +20,8 @@ export function About() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="About"
-          title="Engineer at the intersection of data & AI"
-          description="Turning raw data into reliable platforms, sharp analytics and intelligent products."
+          title="Data Engineer building reliable data platforms"
+          description="Designing dependable data pipelines, ETL workflows, and analytics solutions."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
