@@ -7,16 +7,13 @@ export const SITE = {
   name: "Mohammed Rayees",
   shortName: "Rayees",
   brand: "Mohammed Rayees Portfolio",
-  brandTagline: "Data Engineer | Analytics Engineer | AI Engineer",
+  brandTagline: "Data Engineer | Azure | Analytics",
   roles: [
     "Data Engineer",
     "Analytics Engineer",
-    "AI Engineer",
-    "GenAI Builder",
-    "Vibe Coder",
   ],
   tagline:
-    "Building scalable data platforms, analytics solutions, and AI-powered applications.",
+    "Building reliable data pipelines, cloud data platforms, and analytics solutions.",
   url: "https://mohammedrayees.dev",
   email: "hello@flyingfish.in",
   whatsapp: "9500152689",
@@ -81,7 +78,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ],
   },
   {
-    title: "AI / GenAI",
+    title: "Additional AI Tools",
     accent: "from-fuchsia-500 to-purple-600",
     skills: [
       { name: "OpenAI", level: 90 },
@@ -113,7 +110,7 @@ export const PROJECTS: Project[] = [
     description:
       "Production-ready LinkedIn outreach automation platform built using Playwright, Google Sheets, SQLite, OpenAI, Anthropic, OpenRouter, and Ollama.",
     category: "AI / Automation",
-    featured: true,
+    featured: false,
     github: "https://github.com/MohammedRayees25/linkedin-outreach-automation",
     tech: [
       "Playwright",
@@ -139,10 +136,17 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Formula 1 Race Analytics Platform",
+    featured: true,
     description:
       "Built an end-to-end Azure Data Engineering solution using Azure Data Factory, Databricks, PySpark, and Formula 1 datasets.",
     category: "Data Engineering",
     tech: ["Azure Data Factory", "Databricks", "PySpark", "Azure", "Delta Lake"],
+    features: [
+      "Azure Data Factory ingestion",
+      "Databricks data processing",
+      "PySpark transformations",
+      "Delta Lake storage",
+    ],
   },
   {
     title: "Business Insights 360",
