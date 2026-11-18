@@ -25,23 +25,23 @@ export const SITE = {
   social: {
     github: "https://github.com/MohammedRayees25",
     githubUser: "MohammedRayees25",
-    linkedin: "https://www.linkedin.com/in/mohammed-rayees25",
+    linkedin: "https://www.linkedin.com/in/mohammedrayees25",
   },
 };
 
 export const ABOUT = {
   highlights: [
     { label: "Years Experience", value: "2+", suffix: "" },
-    { label: "Former HCL Associate", value: "HCL", suffix: "" },
-    { label: "Projects Shipped", value: "10", suffix: "+" },
-    { label: "LLMs Integrated", value: "4", suffix: "+" },
+    { label: "Current Company", value: "HMT", suffix: "" },
+    { label: "Cloud Platform", value: "Azure", suffix: "" },
+    { label: "Core Focus", value: "ETL", suffix: "" },
   ],
   paragraphs: [
-    "I'm a Data & AI Engineer with 2+ years of experience designing and shipping production-grade data platforms and intelligent applications.",
-    "As a former Associate at HCL Technologies, I specialized in SQL analysis, data validation, and reporting automation — delivering measurable business impact in healthcare analytics.",
-    "Today I build scalable data pipelines, cloud-native analytics solutions, and GenAI-powered products. My toolkit spans Databricks, PySpark, Airflow, dbt, Azure, AWS, and the modern LLM stack.",
+    "I'm a Data Engineer with 2+ years of experience supporting cloud-based data platforms, ETL workflows, and analytics solutions.",
+    "At HCL Technologies, I worked across SQL analysis, data validation, reporting, and healthcare operations. At Happiest Minds Technologies, I support Azure data platforms and production workloads, monitoring pipelines and investigating data issues.",
+    "My day-to-day toolkit includes Azure Data Factory, Azure Databricks, ADLS Gen2, SQL, Python, PySpark, Delta Lake, and Power BI. I focus on reliable data movement, troubleshooting, and keeping production data workflows healthy.",
   ],
-  focus: ["SQL", "Data Engineering", "Cloud", "GenAI"],
+  focus: ["SQL", "Data Engineering", "Cloud", "Analytics"],
 };
 
 export interface SkillCategory {
@@ -170,20 +170,38 @@ export interface ExperienceItem {
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
+    company: "Happiest Minds Technologies",
+    role: "Data Engineer",
+    period: "July 2026 — Present",
+    responsibilities: [
+      "Azure Data Factory",
+      "Azure Databricks",
+      "ADLS Gen2",
+      "SQL & PySpark",
+      "Power BI Data Operations",
+      "Production Monitoring & Incident Triage",
+    ],
+    achievements: [
+      "Monitor production data pipelines and Databricks workloads",
+      "Investigate ingestion, refresh, and data-quality failures",
+      "Coordinate incident resolution and service requests across data platforms",
+    ],
+  },
+  {
     company: "HCL Technologies",
-    role: "Associate",
-    period: "2022 — 2024",
+    role: "Data Engineer",
+    period: "August 2023 — June 2026",
     responsibilities: [
       "SQL Analysis",
       "Data Validation",
       "Reporting Automation",
-      "Business Intelligence",
       "Healthcare Analytics",
+      "Operational Data Support",
     ],
     achievements: [
-      "Reduced dispute resolution time by 30%",
-      "Improved reporting accuracy",
-      "Delivered actionable business insights",
+      "Supported healthcare data operations and payment-dispute workflows",
+      "Performed SQL-based analysis and data validation",
+      "Supported reporting workflows and operational issue resolution",
     ],
   },
 ];
