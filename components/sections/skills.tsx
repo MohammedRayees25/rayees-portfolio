@@ -13,8 +13,8 @@ export function Skills() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Skills"
-          title="A full-stack data & AI toolkit"
-          description="From ingestion and transformation to dashboards and LLM-powered apps."
+          title="Data engineering & analytics toolkit"
+          description="From cloud data ingestion and transformation to analytics, reporting, and production data workflows."
         />
 
         <div className="grid gap-6 md:grid-cols-2">
