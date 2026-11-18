@@ -17,8 +17,8 @@ export function Projects() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Projects"
-          title="Work that ships to production"
-          description="Selected projects across data engineering, analytics and applied AI."
+          title="Data projects built for real-world use"
+          description="Selected projects focused on data engineering, cloud pipelines, and business analytics."
         />
 
         {featured && <FeaturedCard project={featured} />}
@@ -42,7 +42,7 @@ function FeaturedCard({ project }: { project: Project }) {
         className="card-hover rounded-3xl border border-white/10 bg-card/60 backdrop-blur-xl"
         color="rgba(139,92,246,0.18)"
       >
-        <div className="grid gap-8 p-7 md:grid-cols-2 md:p-10">
+        <div className={`grid gap-8 p-7 md:p-10 ${project.stats?.length ? "md:grid-cols-2" : "md:grid-cols-1"}`}>
           <div className="flex flex-col">
             <div className="mb-4 flex items-center gap-2">
               <Badge variant="accent">
@@ -89,7 +89,7 @@ function FeaturedCard({ project }: { project: Project }) {
           </div>
 
           {/* stats panel */}
-          <div className="flex flex-col justify-center gap-4">
+          {Boolean(project.stats?.length) && <div className="flex flex-col justify-center gap-4">
             {project.stats?.map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -103,7 +103,7 @@ function FeaturedCard({ project }: { project: Project }) {
                 <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
-          </div>
+          </div>}
         </div>
       </Spotlight>
     </Reveal>
